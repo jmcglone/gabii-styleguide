@@ -1,2 +1,2 @@
-# fulcrum-styleguide
-Style guide for Michigan Publishing's publishing platform, [Fulcrum](http://fulcrum.org).
+# gabb-styleguide
+Style guide for Gabii Project Reports, a monograph series published by the University of Michigan Press.
