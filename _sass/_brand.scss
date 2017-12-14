@@ -248,10 +248,13 @@ main * {
   line-height: 1em;
 }
 
-a, strong,
+a,
 button, input[type=button] {
-  @include garamond;
   font-weight: 400;
+}
+
+strong {
+  font-weight: 600;
 }
 
 em {
@@ -280,7 +283,7 @@ h2,
 h3,
 .gamma {
   font-size: $gamma;
-  line-height: 1.3em;
+  line-height: 1.5em;
   margin-bottom: 0.5em;
 }
 
@@ -292,11 +295,10 @@ ul,
 ol,
 li,
 blockquote,
-figure,
 .delta {
   font-size: $delta;
   line-height: 1.6em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
 }
 
 small,
@@ -310,6 +312,56 @@ p,
   line-height: 1.58em;
 }
 
+.lead {
+  font-size: $gamma;
+  @include lato;
+}
+
+figure {
+  font-size: $milli;
+  @include lato;
+  padding: 1em;
+
+  svg,
+  img {
+    padding: 1em;
+  }
+
+  figcaption {
+    padding-top: 1em;
+    text-align: center;
+  }
+}
+
+.well,
+.alert,
+.label,
+table,
+.btn {
+  @include lato;
+}
+
+table {
+  font-size: $milli;
+}
+
+blockquote {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul,
+ol {
+  margin-left: 2em;
+  padding: 1em 0;
+}
+
+li > ul,
+li > ol {
+  margin-left: 2em;
+  padding: 0;
+}
 
 ///////////////////////////////////
 // global colors
@@ -328,12 +380,24 @@ h1, h2, h3, h4, h5, h6,
 
 // links
 a {
-  color: $accent-color;
-  border-bottom: $stroke-width solid transparent;
+  color: $link;
+  border-bottom-width: $stroke-width;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+  text-decoration: none;
 
   &:hover, &:focus, &:active {
-    color: $brand-color;
+    color: $link-hover;
     border-color: inherit;
+    text-decoration: none;
+  }
+}
+
+a.unity {
+  border-bottom-style: dotted;
+
+  &:hover, &:focus, &:active {
+    border-bottom-style: solid;
   }
 }
 
@@ -344,12 +408,6 @@ a {
 }
 [disabled]:focus {
   box-shadow: 0px 0px 6px 0px $light-2;
-}
-
-// selection enhancement
-::selection {
-  background: rgba($light-2, 0.333333);
-  text-shadow: none;
 }
 
 
@@ -365,22 +423,29 @@ footer {
 }
 
 .navbar-default {
-  height: 6em;
+  height: 4em;
+  border-bottom: 0 solid transparent;
 
   .navbar-brand {
     color: $white;
     height: auto;
     @include lato;
-    font-size: 2.5em;
+    font-size: $gamma;
+    padding: 10px;
 
     img {
-      height: 55px;
+      height: 35px;
     }
 
   }
 
   .navbar-brand.title {
-    padding-top: 1em;
+    padding-top: .8em;
+    padding-left: 1em;
+  }
+
+  .navbar-brand {
+    border-bottom: 0 solid transparent;
   }
 
   .navbar-brand:hover {
@@ -433,6 +498,22 @@ footer {
       max-height: 120px;
       margin: 0 auto;
   }
+}
+
+///////////////////////////////////
+// logos
+///////////////////////////////////
+
+.main-logo {
+  background-color: $brand-color;
+}
+
+.primary-logo {
+  background-color: $white;
+}
+
+.secondary-logo {
+  background-color: $light-1;
 }
 
 ///////////////////////////////////
@@ -563,6 +644,16 @@ form .button {
     opacity: 0.66666666;
   }
 
+}
+
+///////////////////////////////////
+// features
+///////////////////////////////////
+.well {
+  border-radius: 2px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 300;
 }
 
 
