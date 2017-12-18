@@ -255,11 +255,9 @@
         <div class="col-md-12">
           <p><a href="#" class="button">Button</a> <a class="button is-disabled" disabled>Disabled button</a></p>
 
-          <p><a href="#" class="button--lg">Large button</a></p>
-
-          <p><a href="#" class="button--sm">Small button</a></p>
+          <br/ > <br />
           <p>
-            <button type="button" class="btn btn-lg btn-default">Default</button>
+            <button type="button" class="btn btn-lg btn-default">Large button</button>
             <button type="button" class="btn btn-lg btn-primary">Primary</button>
             <button type="button" class="btn btn-lg btn-success">Success</button>
             <button type="button" class="btn btn-lg btn-info">Info</button>
@@ -268,7 +266,7 @@
             <button type="button" class="btn btn-lg btn-link">Link</button>
           </p>
           <p>
-            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-default">Default button</button>
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-success">Success</button>
             <button type="button" class="btn btn-info">Info</button>
@@ -277,7 +275,7 @@
             <button type="button" class="btn btn-link">Link</button>
           </p>
           <p>
-            <button type="button" class="btn btn-sm btn-default">Default</button>
+            <button type="button" class="btn btn-sm btn-default">Small button</button>
             <button type="button" class="btn btn-sm btn-primary">Primary</button>
             <button type="button" class="btn btn-sm btn-success">Success</button>
             <button type="button" class="btn btn-sm btn-info">Info</button>
@@ -286,7 +284,7 @@
             <button type="button" class="btn btn-sm btn-link">Link</button>
           </p>
           <p>
-            <button type="button" class="btn btn-xs btn-default">Default</button>
+            <button type="button" class="btn btn-xs btn-default">Extra-small button</button>
             <button type="button" class="btn btn-xs btn-primary">Primary</button>
             <button type="button" class="btn btn-xs btn-success">Success</button>
             <button type="button" class="btn btn-xs btn-info">Info</button>
@@ -302,138 +300,145 @@
           <h2>Tables</h2>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <table class="table">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
+                  <th rowspan="2">SPECIES</th>
+                  <th colspan="2">TOTAL Phase 1</th>
+                </tr>
+                <tr>
+                  <th>N</th>
+                  <th>%</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td class="xmltd">Terrestrial Gastropoda</td>
+                  <td class="xmltd">9</td>
+                  <td class="xmltd">1.2</td>
                 </tr>
                 <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td class="xmltd">Fresh water Bivalvia</td>
+                  <td class="xmltd">2</td>
+                  <td class="xmltd">0.3</td>
                 </tr>
                 <tr>
-                  <td>3</td>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <td class="xmltd"><em>Columba palumbus</em></td>
+                  <td class="xmltd">1</td>
+                  <td class="xmltd">0.1</td>
                 </tr>
               </tbody>
-            </table>
-          </div>
-          <div class="col-md-6">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
+              <caption>Table 2: Proportions of all taxa present in Phase B-1.</caption>
             </table>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th colspan="9">Phase 1</th>
+                </tr>
+                <tr>
+                  <th class="xmltd">SPECIES</th>
+                  <th class="xmltd">Very Young</th>
+                  <th class="xmltd">Young</th>
+                  <th class="xmltd">Young-Adult</th>
+                  <th class="xmltd">Prime Adult</th>
+                  <th class="xmltd">Older Adult</th>
+                  <th class="xmltd">Senile</th>
+                  <th class="xmltd">Indet. Adult</th>
+                  <th class="xmltd">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="xmltd"><em>Sus domesticus</em></td>
+                  <td class="xmltd">5</td>
+                  <td class="xmltd">1</td>
+                  <td class="xmltd"></td>
+                  <td class="xmltd">4</td>
+                  <td class="xmltd">4</td>
+                  <td class="xmltd">2</td>
+                  <td class="xmltd">2</td>
+                  <td class="xmltd">18</td>
+                </tr>
+                <tr>
+                  <td class="xmltd"><em>Ovis vel Capra</em></td>
+                  <td class="xmltd">3</td>
+                  <td class="xmltd">1</td>
+                  <td class="xmltd"></td>
+                  <td class="xmltd">3</td>
+                  <td class="xmltd">1</td>
+                  <td class="xmltd"></td>
+                  <td class="xmltd">2</td>
+                  <td class="xmltd">10</td>
+                </tr>
+                <tr>
+                  <td class="xmltd"><em>Bos taurus</em></td>
+                  <td class="xmltd"></td>
+                  <td class="xmltd"></td>
+                  <td class="xmltd">1</td>
+                  <td class="xmltd">1</td>
+                  <td class="xmltd"></td>
+                  <td class="xmltd"></td>
+                  <td class="xmltd">4</td>
+                  <td class="xmltd">6</td>
+                </tr>
+              </tbody>
+                <caption>Table 5: Age at death of the main domestic taxa present in Phase B-1.</caption>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
+                  <th colspan="3">Phase 2</th>
+                </tr>
+                <tr>
+                  <th class="xmltd"></th>
+                  <th class="xmltd">NR</th>
+                  <th class="xmltd">%</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td rowspan="2">1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td class="xmltd">SU 1182</td>
+                  <td class="xmltd">14</td>
+                  <td class="xmltd">1.7</td>
                 </tr>
                 <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@TwBootstrap</td>
+                  <td class="xmltd">SU 1386</td>
+                  <td class="xmltd">83</td>
+                  <td class="xmltd">10.1</td>
                 </tr>
                 <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td class="xmltd">SU 1423*</td>
+                  <td class="xmltd">192</td>
+                  <td class="xmltd">23.4</td>
                 </tr>
                 <tr>
-                  <td>3</td>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
+                  <td class="xmltd">SU 1457</td>
+                  <td class="xmltd">43</td>
+                  <td class="xmltd">5.2</td>
+                </tr>
+                <tr>
+                  <td class="xmltd">SU 5016</td>
+                  <td class="xmltd">489</td>
+                  <td class="xmltd">59.6</td>
+                </tr>
+                <tr>
+                  <td class="xmltd"><strong>TOTAL</strong></td>
+                  <td class="xmltd">821</td>
+                  <td class="xmltd">100</td>
                 </tr>
               </tbody>
-            </table>
-          </div>
-          <div class="col-md-6">
-            <table class="table table-condensed">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
+              <caption>Table 6: The percentages and counts of remains from SUs producing faunal evidence dated to Phase B-2.</caption>
             </table>
           </div>
         </div>
@@ -569,6 +574,7 @@
             <span class="label label-info">Info</span>
             <span class="label label-warning">Warning</span>
             <span class="label label-danger">Danger</span>
+            h1
           </h1>
           <h2>
             <span class="label label-default">Default</span>
@@ -577,6 +583,7 @@
             <span class="label label-info">Info</span>
             <span class="label label-warning">Warning</span>
             <span class="label label-danger">Danger</span>
+            h2
           </h2>
           <h3>
             <span class="label label-default">Default</span>
@@ -585,6 +592,7 @@
             <span class="label label-info">Info</span>
             <span class="label label-warning">Warning</span>
             <span class="label label-danger">Danger</span>
+            h3
           </h3>
           <h4>
             <span class="label label-default">Default</span>
@@ -593,23 +601,8 @@
             <span class="label label-info">Info</span>
             <span class="label label-warning">Warning</span>
             <span class="label label-danger">Danger</span>
+            h4 - h6
           </h4>
-          <h5>
-            <span class="label label-default">Default</span>
-            <span class="label label-primary">Primary</span>
-            <span class="label label-success">Success</span>
-            <span class="label label-info">Info</span>
-            <span class="label label-warning">Warning</span>
-            <span class="label label-danger">Danger</span>
-          </h5>
-          <h6>
-            <span class="label label-default">Default</span>
-            <span class="label label-primary">Primary</span>
-            <span class="label label-success">Success</span>
-            <span class="label label-info">Info</span>
-            <span class="label label-warning">Warning</span>
-            <span class="label label-danger">Danger</span>
-          </h6>
           <p>
             <span class="label label-default">Default</span>
             <span class="label label-primary">Primary</span>
@@ -617,6 +610,7 @@
             <span class="label label-info">Info</span>
             <span class="label label-warning">Warning</span>
             <span class="label label-danger">Danger</span>
+            body copy
           </p>
         </div>
       </div>
@@ -643,7 +637,28 @@
 
     </main> <!-- /container -->
     <footer>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <p class="title">Gabii Project Reports</p>
+            <p>Written and crafted by Rachel Opitz, Marcello Mogetta, and Nicola Terranato, Editors</p>
+            <ul class="list-unstyled">
+              <li>ISBN: 978-0-472-99900-2</li>
+              <li>DOI: https://doi.org/10.3998/mpub.9231782</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <div class="logos">
+              <img class="responsive-img" src="http://fulcrum.org/img/fulcrum-white-footer.png" alt="Fulcrum">
+            </div>
+          </div>
+        </div>
+        <div class="row bottom">
+          <div class="col-sm-12">
+            <p>© University of Michigan Press 2017 | Published and Hosted by <a href="https://www.press.umich.edu" title="Link to University of Michigan Press homepage">University of Michigan Press</a> | <a href="mailto:umpress-gabii@umich.edu">Feedback</a></p>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
